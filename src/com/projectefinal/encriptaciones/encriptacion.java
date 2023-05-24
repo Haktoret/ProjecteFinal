@@ -1,8 +1,6 @@
-package com.projectefinal.login;
+package com.projectefinal.encriptaciones;
 
-import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
@@ -11,7 +9,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Base64;
 
@@ -19,7 +16,6 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 
 public class encriptacion {
-
 	public static final int longitudSalt = 4;
 	public static final int iteracions = 10000;
 	public static final int longitudHash = 256;
@@ -111,7 +107,4 @@ public class encriptacion {
 	   
 	    return false;
 	}
-	
-
 }
-

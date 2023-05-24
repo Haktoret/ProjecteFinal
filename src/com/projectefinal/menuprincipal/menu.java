@@ -36,7 +36,8 @@ import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import com.projectefinal.login.encriptacion;
+import com.projecte.paneles.PanelLogin;
+
 
 public class menu extends JFrame {
 	private Container pagina = this.getContentPane();
