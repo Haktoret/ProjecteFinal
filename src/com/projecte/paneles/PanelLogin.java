@@ -30,6 +30,7 @@ public class PanelLogin extends JPanel{
 
 	
 	public PanelLogin() {
+		
 		this.setLayout(new BorderLayout());
 		JPanel conjunto = new JPanel();
 		
@@ -108,6 +109,7 @@ public class PanelLogin extends JPanel{
 					nombreUserLog = nombreUser;
 					boolean verificacion = encriptacion.verificarContra(fieldUser.getText().trim(), fieldPass.getText());
 					if (verificacion) {
+						
 						menu mRegistro = (menu) SwingUtilities.getWindowAncestor(PanelLogin.this);
 						mRegistro.getContentPane().removeAll();
 						PanelInicio inici = new PanelInicio(nombreUser);
@@ -135,5 +137,9 @@ public class PanelLogin extends JPanel{
 		
 		
 
+	}
+	
+	public static String nomUserLog() {
+		return nombreUserLog;
 	}
 }

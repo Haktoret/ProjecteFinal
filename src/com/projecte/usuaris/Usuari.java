@@ -3,7 +3,7 @@ package com.projecte.usuaris;
 public class Usuari {
 	private String nombre;
 	private String apellidos;
-	private String correo;
+	private static String correo;
 	private String poblacio;
 	private byte[] imagenByte;
 	
@@ -19,11 +19,11 @@ public class Usuari {
 	public void setApellidos(String apellidos) {
 		this.apellidos = apellidos;
 	}
-	public String getCorreo() {
+	public static String getCorreo() {
 		return correo;
 	}
 	public void setCorreo(String correo) {
-		this.correo = correo;
+		Usuari.correo = correo;
 	}
 	public String getPoblacio() {
 		return poblacio;
@@ -42,9 +42,11 @@ public class Usuari {
 		super();
 		this.nombre = nombre;
 		this.apellidos = apellidos;
-		this.correo = correo;
+		Usuari.correo = correo;
 		this.poblacio = poblacio;
 		this.imagenByte = imagenByte;
 	}
+	
+	
 	
 }
