@@ -13,7 +13,7 @@
 <h3>Características principales</h3>
 Buscaminas: El clásico juego de Buscaminas donde debes despejar el tablero sin hacer clic en las minas. Cuenta con un sistema de ranking para competir por la puntuación más alta.<br>
 Juego de la Vida: Una simulación del Juego de la Vida de Conway, donde las células evolucionan según reglas simples. Puedes experimentar con diferentes patrones iniciales y observar cómo se desarrolla la evolución.<br>
-Pixel Art: Un juego creativo donde puedes crear arte de píxeles. Guarda tus obras de arte y compártelas con otros jugadores.
+Pixel Art: Un juego creativo donde puedes crear arte de píxeles. Guarda tus obras de arte y compártelas con otros jugadores.<br>
 <img src="https://github.com/Haktoret/ProjecteFinal/assets/80909782/0b3d7de4-77ec-4830-bc98-15eff2af27e9" alt="JUEGOS" />
 
 <h3>Dessarrolladores</h3>
