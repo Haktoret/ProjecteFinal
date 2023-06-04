@@ -36,17 +36,21 @@ import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+import com.joc.buscamines.ventana;
+import com.joc.pixelART.PixelArt;
+import com.projecte.paneles.PanelInicio;
 import com.projecte.paneles.PanelLogin;
 
 
 public class menu extends JFrame {
+	private PixelArt p = PanelInicio.getP();
 	private Container pagina = this.getContentPane();
 
 	public menu() throws HeadlessException {
 		pagina.setLayout(new BorderLayout());
 		crearTablas();
 		mostrarLogin();
-
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
 		this.setSize(700, 550);
 		this.setVisible(true);
@@ -72,6 +76,8 @@ public class menu extends JFrame {
 
 			s.execute(
 					"CREATE TABLE IF NOT EXISTS password (id INT PRIMARY KEY AUTO_INCREMENT, id_usuario INT NOT NULL REFERENCES usuario(id), hash LONGTEXT NOT NULL, salt LONGTEXT NOT NULL)");
+
+            s.execute("CREATE TABLE IF NOT EXISTS partidas (id INT PRIMARY KEY AUTO_INCREMENT, id_usuario INT NOT NULL REFERENCES usuario(id), juego VARCHAR(20) NOT NULL, referencia_juego LONGBLOB, nombre_partida VARCHAR(25) NOT NULL, tiempo INT(10), cuadroMida INT(20), ventanaMida INT(20))");
 
 		} catch (Exception e1) {
 			System.out.println("Error al conectar con la base de datos: " + e1.getMessage());

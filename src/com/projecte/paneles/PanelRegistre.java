@@ -295,6 +295,10 @@ public class PanelRegistre extends JPanel{
 					vacio5.setText("Tienes que elegir una imagen");
 					vacio5.setHorizontalAlignment(SwingConstants.CENTER);
 					vacio5.setForeground(Color.red);
+				}else if(!fitxerGuardar.exists()) {
+					vacio5.setText("Incorrecto");
+					vacio5.setHorizontalAlignment(SwingConstants.CENTER);
+					vacio5.setForeground(Color.red);
 				} else {
 					vacio5.setText("");
 					contador++;
@@ -325,7 +329,7 @@ public class PanelRegistre extends JPanel{
 
 						String sentencia = "INSERT INTO usuario (nombre,apellidos,correo,poblacion,imagen) VALUES (?,?,?,?,?)";
 						PreparedStatement s = c.prepareStatement(sentencia);
-						Usuari user = new Usuari(nombre, Apellido, correo, Poblacio, imagenByte);
+						Usuari user = new Usuari(nombre, Apellido, Correo, Poblacio, imagenByte);
 						s.setString(1, user.getNombre());
 						s.setString(2, user.getApellidos());
 						s.setString(3, user.getCorreo());
