@@ -22,3 +22,4 @@ Pixel Art: Un juego creativo donde puedes crear arte de píxeles. Guarda tus obr
 - Eric García
 - Hector Burgos
 - Sergi Blasco
+<h4><a href="https://drive.google.com/drive/folders/1EALXcQPEGT7FVMVNvcrH26AGzePAjNvd?usp=sharing">Aquí</a> puedes descargar los JARS necesarios</h4>
